@@ -10,10 +10,10 @@ const AddCoffee = () => {
     console.log(newCoffee);
 
     // send coffee data to the db
-    fetch("http://localhost:3100/coffees", {
+    fetch("https://coffee-store-server-j45b6r404-dipongkor-roys-projects.vercel.app/coffees", {
       method: "POST",
       headers: {
-        "content-type": "application/json", 
+        "content-type": "application/json",
       },
       body: JSON.stringify(newCoffee),
     })

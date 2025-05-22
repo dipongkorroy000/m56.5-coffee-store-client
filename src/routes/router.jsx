@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: () => fetch("http://localhost:3100/coffees"),
+        loader: () => fetch("https://coffee-store-server-j45b6r404-dipongkor-roys-projects.vercel.app/coffees"),
         Component: Home,
       },
       {
@@ -26,13 +26,13 @@ const router = createBrowserRouter([
       {
         path: "/coffees/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:3100/coffees/${params.id}`),
+          fetch(`https://coffee-store-server-j45b6r404-dipongkor-roys-projects.vercel.app/coffees/${params.id}`),
         Component: CoffeeDetails,
       },
       {
         path: "/updateCoffee/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:3100/coffees/${params.id}`),
+          fetch(`https://coffee-store-server-j45b6r404-dipongkor-roys-projects.vercel.app/coffees/${params.id}`),
         Component: UpdateCoffee,
       },
       {
@@ -45,7 +45,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/users",
-        loader: () => fetch(`http://localhost:3100/users`),
+        loader: () => fetch(`https://coffee-store-server-j45b6r404-dipongkor-roys-projects.vercel.app/users`),
         Component: Users,
       },
       {

@@ -16,7 +16,7 @@ const Registration = () => {
         email,
         lastSignInTime: result.user?.metadata?.lastSignInTime,
       };
-      fetch("http://localhost:3100/users", {
+      fetch("https://coffee-store-server-j45b6r404-dipongkor-roys-projects.vercel.app/users", {
         method: "PATCH",
         headers: {
           "content-type": "application/json",
