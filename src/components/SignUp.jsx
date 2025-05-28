@@ -32,7 +32,7 @@ const Login = () => {
           lastSignInTime: result.user?.metadata.lastSignInTime,
         };
 
-        fetch("https://coffee-store-server-j45b6r404-dipongkor-roys-projects.vercel.app/users", {
+        fetch("https://coffee-store-server-liart-rho.vercel.app/users", {
           method: "POST",
           headers: {
             "content-type": "application/json",
